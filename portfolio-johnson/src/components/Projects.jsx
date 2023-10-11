@@ -1,7 +1,11 @@
+import { Container } from "@mui/material";
+
 function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <>
+      <Container maxWidth="md">Projects</Container>
+    </>
+  );
 }
 
-export default Projects
+export default Projects;

@@ -1,6 +1,13 @@
+import {
+  Container
+} from "@mui/material";
+
+
 function Experiences() {
   return (
-    <div>Experiences</div>
+    <>
+      <Container maxWidth="md">Experiences</Container>
+    </>
   )
 }
 

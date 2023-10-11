@@ -1,6 +1,13 @@
+import {
+  Container
+} from "@mui/material";
+
+
 function Intro() {
   return (
-    <div>Intro</div>
+    <>
+      <Container maxWidth="md">Intro</Container>
+    </>
   )
 }
 

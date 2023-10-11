@@ -1,8 +1,13 @@
-import React from 'react'
+import {
+  Container
+} from "@mui/material";
+
 
 function ContactForm() {
   return (
-    <div>ContactForm</div>
+    <>
+      <Container maxWidth="md">Contact Form</Container>
+    </>
   )
 }
 
