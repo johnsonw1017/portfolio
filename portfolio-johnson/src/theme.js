@@ -1,23 +1,39 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
-import "@fontsource/montserrat";
 
 let theme = createTheme({
     palette: {
-        primary: {
-            main: '#33658A',
-            light: '#86BBD8',
-            dark: '#2F4858'
+        peach: {
+            main: '#EFC69B',
+            contrastText: '#000000'
         },
-        secondary: {
+        hunyellow: {
             main: '#F6AE2D',
-            light: '#EFC69B',
+            contrastText: '#000000'
         },
-        background: {
-            default: '#F5F5F5'
+        charcoal: {
+            main: '#2F4858',
+            contrastText: '#FFFFFF'
+        },
+        lapis: {
+            main: '#33658A',
+            contrastText: '#FFFFFF'
+        },
+        caroline_blue: {
+            main: '#86BBD8',
+            contrastText: '#000000'
+        },
+        white_background: {
+            main: '#F5F5F5'
+        },
+        white: {
+            main: '#FFFFFF'
+        },
+        black: {
+            main: '#000000'
         },
     },
     typography: {
-        fontFamily: 'Montserrat sans-serif',
+        fontFamily: 'Montserrat',
     }
 });
 

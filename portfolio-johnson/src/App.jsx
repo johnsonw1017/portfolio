@@ -1,4 +1,5 @@
-import { ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 import { CssBaseline } from "@mui/material";
 
@@ -7,21 +8,22 @@ import Intro from "./components/Intro";
 import MyStory from "./components/MyStory";
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
-import ConnectForm from "./components/ConnectForm";
-
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Navbar />
-        <Intro />
-        <MyStory />
-        <Projects />
-        <Experiences />
-        <ConnectForm />
-      </ThemeProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Navbar />
+          <Intro id="intro" />
+          <MyStory />
+          <Projects />
+          <Experiences />
+          <ContactForm id="contact" />
+        </ThemeProvider>
+      </BrowserRouter>
     </>
   );
 }
