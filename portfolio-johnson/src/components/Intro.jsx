@@ -19,7 +19,7 @@ function Intro() {
                     fontSize: { xs: "2rem", sm: "3rem" },
                   }}
                 >
-                  Hi I'm Johnson, <br /> a Web Developer
+                  Hi I'm <span style={{color: pallete.lapis}}>Johnson</span>, <br /> a <span style={{color: pallete.hunyellow}}>Web Developer</span>.
                 </Typography>
               </Box>
             </Grid>
