@@ -5,6 +5,7 @@ import { CssBaseline } from "@mui/material";
 
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
+import TechStackTicker from "./components/TechStackTicker";
 import MyStory from "./components/MyStory";
 import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
@@ -18,6 +19,7 @@ function App() {
           <CssBaseline />
           <Navbar />
           <Intro id="intro" />
+          <TechStackTicker />
           <MyStory />
           <Projects />
           <Experiences />
