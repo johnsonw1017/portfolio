@@ -41,3 +41,8 @@
         transform: translateX(100%);
     }
 }
+
+.title-text {
+    font-size: 50px;
+    font-weight: 700;
+}
