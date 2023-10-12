@@ -19,7 +19,7 @@ function Experiences() {
                 fontSize: "30px",
                 marginTop: 2,
                 marginBottom: 2,
-                color: pallete.whitegray,
+                color: pallete.white,
               }}
             >
               Experiences
