@@ -1,14 +1,38 @@
-import {
-  Container
-} from "@mui/material";
-
+import { Box, Container, Grid, Typography } from "@mui/material";
+import "./component.css";
+import Profile from "../assets/profile.png";
+import pallete from "../pallete";
 
 function Intro() {
   return (
     <>
-      <Container maxWidth="md">Intro</Container>
+      <div style={{ backgroundColor: pallete.whitegray }}>
+        <Container maxWidth="md" className="intro-container" disableGutters>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={8}>
+              <Box textAlign="center" className="box-content">
+                <Typography
+                  variant="h2"
+                  className="intro-text"
+                  sx={{
+                    fontWeight: "700",
+                    fontSize: { xs: "2rem", sm: "3rem" },
+                  }}
+                >
+                  Hi I'm Johnson, <br /> a Web Developer
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box>
+                <img className="profile-image" src={Profile} alt="profile" />
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
     </>
-  )
+  );
 }
 
-export default Intro
+export default Intro;

@@ -1,0 +1,17 @@
+.intro-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+}
