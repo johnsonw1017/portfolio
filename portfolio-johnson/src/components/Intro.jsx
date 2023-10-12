@@ -16,7 +16,7 @@ function Intro() {
                   className="intro-text"
                   sx={{
                     fontWeight: "700",
-                    fontSize: { xs: "2rem", sm: "3rem" },
+                    fontSize: { xs: "30px", sm: "48px" },
                   }}
                 >
                   Hi I'm <span style={{color: pallete.lapis}}>Johnson</span>, <br /> a <span style={{color: pallete.hunyellow}}>Web Developer</span>.
