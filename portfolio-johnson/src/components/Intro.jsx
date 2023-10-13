@@ -5,7 +5,7 @@ import pallete from "../pallete";
 
 function Intro() {
   return (
-    <>
+    <section id="intro">
       <div style={{ backgroundColor: pallete.whitegray }}>
         <Container maxWidth="md" className="intro-container" disableGutters>
           <Grid container spacing={2}>
@@ -31,7 +31,7 @@ function Intro() {
           </Grid>
         </Container>
       </div>
-    </>
+    </section>
   );
 }
 

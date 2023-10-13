@@ -16,7 +16,7 @@ import { HashLink as Link } from "react-router-hash-link";
 function Navbar() {
   return (
     <>
-      <AppBar position="static" color="charcoal">
+      <AppBar position="fixed" color="charcoal">
         <Container maxWidth="md">
           <Toolbar>
             <Box display="flex" alignItems="center">

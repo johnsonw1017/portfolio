@@ -11,7 +11,7 @@ import pallete from "../pallete";
 
 function ContactForm() {
   return (
-    <>
+    <section id="contact">
       <div style={{ backgroundColor: pallete.charcoal }}>
         <Container maxWidth="md">
           <Box className="box-content">
@@ -95,7 +95,7 @@ function ContactForm() {
           </Box>
         </Container>
       </div>
-    </>
+    </ section>
   );
 }
 

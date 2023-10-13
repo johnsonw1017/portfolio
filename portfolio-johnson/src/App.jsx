@@ -18,12 +18,12 @@ function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Navbar />
-          <Intro id="intro" />
+          <Intro />
           <TechStackTicker />
           <MyStory />
           <Projects />
           <Experiences />
-          <ContactForm id="contact" />
+          <ContactForm />
         </ThemeProvider>
       </BrowserRouter>
     </>

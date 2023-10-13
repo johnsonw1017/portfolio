@@ -34,7 +34,7 @@ function Projects() {
             
           >
             {Array.from(Array(6)).map((_, index) => (
-              <Grid item xs={2} sm={4} md={4} key={index} >
+              <Grid item xs={4} sm={4} md={4} key={index} >
                 <Card sx={{ maxWidth: 345, marginBottom: index === 5 ? 4:0, backgroundColor: pallete.hunyellow}}>
                   <CardMedia
                     component="img"
