@@ -1,6 +1,6 @@
 .intro-container {
     display: flex;
-    margin-top: 75px;
+    padding-top: 70px;
 }
 
 .box-content {
@@ -27,6 +27,7 @@
     align-items: center;
     padding: 12px;
     animation: scroll 15s linear infinite;
+    transform: skewY(-3deg);
 }
 
 .ticker-item {

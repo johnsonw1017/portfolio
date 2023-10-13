@@ -11,11 +11,12 @@ import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { HashLink as Link } from "react-router-hash-link";
+import pallete from "../pallete";
 
 
 function Navbar() {
   return (
-    <>
+    <section id="navbar" style={{backgroundColor: pallete.whitegray}}>
       <AppBar position="fixed" color="charcoal">
         <Container maxWidth="md">
           <Toolbar>
@@ -71,7 +72,7 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-    </>
+    </section>
   );
 }
 

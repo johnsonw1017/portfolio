@@ -14,8 +14,8 @@ import { Box, Container } from "@mui/material";
 
 function TechStackTicker() {
   return (
-    <>
-      <div style={{ backgroundColor: pallete.lapis }}>
+    <section id="tech-stack-ticker" style={{backgroundColor: pallete.caroline_blue}}>
+      <div style={{ backgroundColor: pallete.lapis, transform: "skewY(3deg)"}}>
         <Container className="ticker-container" maxWidth="md">
           <Box className="tech-stack-container">
             <FaJs className="ticker-item" size="2em" color="white" />
@@ -32,7 +32,7 @@ function TechStackTicker() {
           </Box>
         </Container>
       </div>
-    </>
+    </section>
   );
 }
 

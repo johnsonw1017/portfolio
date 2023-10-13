@@ -6,8 +6,8 @@ import pallete from "../pallete";
 function Intro() {
   return (
     <section id="intro">
-      <div style={{ backgroundColor: pallete.whitegray }}>
-        <Container maxWidth="md" className="intro-container" disableGutters>
+      <div style={{ backgroundColor: pallete.whitegray, transform: "skewY(3deg)" }}>
+        <Container maxWidth="md" className="intro-container" disableGutters sx={{transform:  "skewY(-3deg)"}}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={8}>
               <Box textAlign="center" className="box-content">
