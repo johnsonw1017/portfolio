@@ -25,7 +25,7 @@ function Intro() {
             </Grid>
             <Grid item xs={12} sm={4}>
               <Box>
-                <img className="profile-image" src={Profile} alt="profile" />
+                <img className="image" src={Profile} alt="profile" />
               </Box>
             </Grid>
           </Grid>

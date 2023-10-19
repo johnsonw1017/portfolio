@@ -11,9 +11,10 @@
     height: 100%;
 }
 
-.profile-image {
+.image {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .ticker-container {
