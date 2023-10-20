@@ -12,6 +12,55 @@ import {
 import pallete from "../pallete";
 
 function Projects() {
+  const projects = [
+    {
+      name: "Gym Class Scheduling",
+      description:
+        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
+      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
+      tech: ["JavaScript", "Bootstrap", "React", "Node", "Express", "MongoDB"],
+      links: {
+        github: "",
+        frontend: "",
+        backend: "",
+      }
+    },
+    {
+      name: "Movie Review API",
+      description:
+        "Backend RESTful API application, features include Features include browsing movie titles, creating movie watchlists, and leaving movie reviews.",
+      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
+      tech: ["Python", "Flask", "PostgreSQL"],
+      links: {
+        github: "",
+      }
+    },
+    {
+      name: "Roulette Game",
+      description:
+        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
+      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
+      tech: ["React", "Node", "Express", "MongoDB"],
+      links: {
+        github: "",
+        frontend: "",
+        backend: "",
+      }
+    },
+    {
+      name: "Gym Class Scheduling",
+      description:
+        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
+      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
+      tech: ["React", "Node", "Express", "MongoDB"],
+      links: {
+        github: "",
+        frontend: "",
+        backend: "",
+      }
+    },
+  ];
+
   return (
     <>
       <div style={{ backgroundColor: pallete.whitegray }}>
@@ -31,11 +80,16 @@ function Projects() {
             container
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
-            
           >
             {Array.from(Array(6)).map((_, index) => (
-              <Grid item xs={4} sm={4} md={4} key={index} >
-                <Card sx={{ maxWidth: 345, marginBottom: index === 5 ? 4:0, backgroundColor: pallete.hunyellow}}>
+              <Grid item xs={4} sm={4} md={4} key={index}>
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    marginBottom: index === 5 ? 4 : 0,
+                    backgroundColor: pallete.hunyellow,
+                  }}
+                >
                   <CardMedia
                     component="img"
                     alt="green iguana"
