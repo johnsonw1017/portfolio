@@ -10,61 +10,66 @@ import {
   Button,
 } from "@mui/material";
 import pallete from "../pallete";
+import Gym from "../assets/projects/gym_scheduling.png";
+import Movie from "../assets/projects/movie_api.png";
+import Roulette from "../assets/projects/roulette_game.png";
+import Portfolio from "../assets/projects/portfolio_prototype.png";
 
 function Projects() {
   const projects = [
     {
-      name: "Gym Class Scheduling",
+      name: "Gym Scheduling",
       description:
-        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
-      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
-      tech: ["JavaScript", "Bootstrap", "React", "Node", "Express", "MongoDB"],
+        "Fullstacks scheduling app, features include class calendar, user login, user registration, and class signup.",
+      image: Gym,
+      tech: ["JavaScript", "React", "Node", "Express", "MongoDB"],
       links: {
-        github: "",
-        frontend: "",
-        backend: "",
-      }
+        github: "https://github.com/orgs/Roids-Fitness/repositories",
+        frontend: "https://roids-fitness.vercel.app",
+        backend: "https://roids-fitness-server-c1145ebc83e7.herokuapp.com",
+      },
+      date: "08/2023"
     },
     {
       name: "Movie Review API",
       description:
         "Backend RESTful API application, features include Features include browsing movie titles, creating movie watchlists, and leaving movie reviews.",
-      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
+      image: Movie,
       tech: ["Python", "Flask", "PostgreSQL"],
       links: {
-        github: "",
-      }
+        github: "https://github.com/johnsonw1017/pyflask-movie-review-api",
+      },
+      date: "03/2023"
     },
     {
       name: "Roulette Game",
       description:
-        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
-      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
-      tech: ["React", "Node", "Express", "MongoDB"],
+        "A text-based terminal application that simulates the classic casino game of roulette.",
+      image: Roulette,
+      tech: ["Python"],
       links: {
-        github: "",
-        frontend: "",
-        backend: "",
-      }
+        github: "https://github.com/johnsonw1017/py-terminal-roulette-game",
+      },
+      date: "12/2022"
     },
     {
-      name: "Gym Class Scheduling",
+      name: "Portfolio Prototype",
       description:
-        "Fullstacks scheduling application, features include class calendar, user login, user registration, and class signup.",
-      image: "https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640",
-      tech: ["React", "Node", "Express", "MongoDB"],
+        "Three-day project of a portfolio website with a focus on responsive design.",
+      image: Portfolio,
+      tech: ["CSS", "HTML"],
       links: {
-        github: "",
-        frontend: "",
-        backend: "",
-      }
+        github: "https://github.com/johnsonw1017/portfolio-prototype",
+        frontend: "https://portfolio-prototype-johnsonwang.netlify.app",
+      },
+      date: "11/2022"
     },
   ];
 
   return (
     <>
       <div style={{ backgroundColor: pallete.whitegray }}>
-        <Container maxWidth="md">
+        <Container maxWidth="md" sx={{ paddingBottom: "20px" }}>
           <Box className="box-content">
             <Typography
               sx={{ fontWeight: "700", fontSize: "30px", marginTop: 2 }}
@@ -72,8 +77,9 @@ function Projects() {
               Projects
             </Typography>
             <Typography sx={{ fontWeight: "400", margin: 2 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Here, you can explore a selection of the work I've done, ranging
+              from web applications to APIs and more. Feel free to click on the
+              cards to access their respective repositories and demos.
             </Typography>
           </Box>
           <Grid
@@ -81,35 +87,76 @@ function Projects() {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            {Array.from(Array(6)).map((_, index) => (
+            {projects.map((project, index) => (
               <Grid item xs={4} sm={4} md={4} key={index}>
                 <Card
                   sx={{
                     maxWidth: 345,
-                    marginBottom: index === 5 ? 4 : 0,
+                    height: "100%",
                     backgroundColor: pallete.hunyellow,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                   }}
                 >
                   <CardMedia
                     component="img"
-                    alt="green iguana"
-                    height="140"
-                    image="https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640"
+                    alt={project.name}
+                    height="150"
+                    image={project.image}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      sx={{ fontWeight: "600" }}
+                    >
+                      {project.name}
                     </Typography>
-                    <Typography variant="body2">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over 6,000 species, ranging across all continents except
-                      Antarctica
+                    <Typography variant="body2" sx={{ fontSize: "14px" }}>
+                      {project.description} <span style={{fontWeight: "600"}}>({project.date})</span>
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Share</Button>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
+                  <CardContent
+                    sx={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <Typography
+                      variant="body2"
+                      sx={{ fontSize: "10px", fontWeight: "500" }}
+                    >
+                      {project.tech.join(" · ")}
+                    </Typography>
+                  </CardContent>
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <CardActions>
+                      <Button
+                        size="small"
+                        href={project.links.github}
+                        target="_blank"
+                      >
+                        GitHub
+                      </Button>
+                      {project.links.frontend && (
+                        <Button
+                          size="small"
+                          href={project.links.frontend}
+                          target="_blank"
+                        >
+                          Demo
+                        </Button>
+                      )}
+                      {project.links.backend && (
+                        <Button
+                          size="small"
+                          href={project.links.backend}
+                          target="_blank"
+                        >
+                          Backend
+                        </Button>
+                      )}
+                    </CardActions>
+                  </div>
                 </Card>
               </Grid>
             ))}
