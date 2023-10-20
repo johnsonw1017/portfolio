@@ -116,12 +116,16 @@ function ContactForm() {
             <Typography
               sx={{ fontWeight: "400", margin: 2, color: pallete.white }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Feel free to leave a message below! Happy to connect with anyone
+              looking to collab or hire. Feedback and enquires welcomed!
             </Typography>
           </Box>
-          <Box className="box-content">
-            <form headers="application/json" name="contact-form" onSubmit={sendEmail}>
+          <Box className="box-content" sx={{ textAlign: "center" }}>
+            <form
+              headers="application/json"
+              name="contact-form"
+              onSubmit={sendEmail}
+            >
               <Grid
                 container
                 spacing={2}
@@ -153,7 +157,7 @@ function ContactForm() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
-                    label="Phone"
+                    label="Phone (Optional)"
                     placeholder="Phone"
                     name="phone"
                     id="phone"
