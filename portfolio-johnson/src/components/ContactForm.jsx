@@ -6,6 +6,7 @@ import {
   TextField,
   Button,
   Grid,
+  Dialog,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import pallete from "../pallete";
@@ -23,7 +24,7 @@ const schema = {
     },
   },
   phone: {
-    presence: { allowEmpty: true, message: "optional" },
+    presence: false,
     length: {
       maximum: 128,
     },
@@ -44,12 +45,24 @@ const schema = {
 };
 
 function ContactForm() {
+  const [thankYouOpen, setThankYouOpen] = useState(false);
+
+  const handleCloseThankYou = () => {
+    setThankYouOpen(false);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((res) => console.log("SUCCESS!", res.status, res.text))
+      .then((res) => {
+        console.log("SUCCESS!", res.status, res.text);
+        setThankYouOpen(true);
+        setTimeout(() => {
+          setThankYouOpen(false);
+        }, 3000);
+      })
       .catch((error) => console.log("FAILED...", error));
 
     setFormState((formState) => ({
@@ -244,6 +257,11 @@ function ContactForm() {
           </Box>
         </Container>
       </div>
+      <Dialog open={thankYouOpen} onClose={handleCloseThankYou}>
+        <Typography sx={{ padding: 2 }}>
+          Thank you for your message! I will get back to you soon.
+        </Typography>
+      </Dialog>
     </section>
   );
 }
