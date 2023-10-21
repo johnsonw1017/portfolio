@@ -33,19 +33,23 @@ function Experiences() {
                 contentArrowStyle={{
                   borderRight: `7px solid  ${pallete.whitegray}`,
                 }}
-                date="2011 - present"
+                date="August 2023 - Present"
                 iconStyle={{ background: pallete.caroline_blue, color: "#fff" }}
                 icon={<MailIcon />}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Creative Director
+                  Software Developer Intern
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
-                  Miami, FL
+                  Interlate
                 </h4>
+                <h5>Brisbane, QLD</h5>
                 <p>
-                  Creative Direction, User Experience, Visual Design, Project
-                  Management, Team Leading
+                  I joined Interlate as a frontend developer intern, working
+                  primary in React, JavaScript and Python. The main project I've
+                  been involved in is CarbonNEM, a interactive dashboard that
+                  displays carbon emissions data from the Australian Energy
+                  Market.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -54,19 +58,23 @@ function Experiences() {
                 contentArrowStyle={{
                   borderRight: `7px solid  ${pallete.whitegray}`,
                 }}
-                date="2010 - 2011"
+                date="October 2022 - August 2023"
                 iconStyle={{ background: pallete.caroline_blue, color: "#fff" }}
                 icon={<MailIcon />}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Art Director
+                  Fullstacks Bootcamper
                 </h3>
                 <h4 className="vertical-timeline-element-subtitle">
-                  San Francisco, CA
+                  Coder Academy
                 </h4>
+                <h5>Remote / Online</h5>
                 <p>
-                  Creative Direction, User Experience, Visual Design, SEO,
-                  Online Marketing
+                  I began my journey into software development by enrolling in
+                  Coder Academy, where I learned all the latest technologies of
+                  fullstacks development. I build projects using JavaScript,
+                  React, Node, Express, MongoDB, Python, Flask, PostgreSQL, and
+                  more.
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>

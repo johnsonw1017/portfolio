@@ -130,7 +130,7 @@ function ContactForm() {
               sx={{ fontWeight: "400", margin: 2, color: pallete.white }}
             >
               Feel free to leave a message below! Happy to connect with anyone
-              looking to collab or hire. Feedback and enquires welcomed!
+              looking to work with me. Feedback and enquires welcomed!
             </Typography>
           </Box>
           <Box className="box-content" sx={{ textAlign: "center" }}>

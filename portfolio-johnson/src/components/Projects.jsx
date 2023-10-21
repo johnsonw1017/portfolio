@@ -28,7 +28,7 @@ function Projects() {
         frontend: "https://roids-fitness.vercel.app",
         backend: "https://roids-fitness-server-c1145ebc83e7.herokuapp.com",
       },
-      date: "08/2023"
+      date: "Aug, 2023"
     },
     {
       name: "Movie Review API",
@@ -39,7 +39,7 @@ function Projects() {
       links: {
         github: "https://github.com/johnsonw1017/pyflask-movie-review-api",
       },
-      date: "03/2023"
+      date: "Mar, 2023"
     },
     {
       name: "Roulette Game",
@@ -50,7 +50,7 @@ function Projects() {
       links: {
         github: "https://github.com/johnsonw1017/py-terminal-roulette-game",
       },
-      date: "12/2022"
+      date: "Dec, 2022"
     },
     {
       name: "Portfolio Prototype",
@@ -62,7 +62,7 @@ function Projects() {
         github: "https://github.com/johnsonw1017/portfolio-prototype",
         frontend: "https://portfolio-prototype-johnsonwang.netlify.app",
       },
-      date: "11/2022"
+      date: "Nov, 2022"
     },
   ];
 
